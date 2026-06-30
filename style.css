@@ -1,0 +1,318 @@
+/* ======================================
+   RESET GERAL
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ======================================
+   CABEÇALHO
+====================================== */
+
+header{
+    background:#0f172a;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* ======================================
+   SEÇÕES
+====================================== */
+
+section{
+    min-height:100vh;
+    padding:120px 10% 60px;
+}
+
+/* ======================================
+   SOBRE
+====================================== */
+
+#sobre{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:white;
+}
+
+#sobre h1{
+    font-size:50px;
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+#sobre p{
+    font-size:20px;
+    max-width:700px;
+}
+
+/* ======================================
+   FORMAÇÃO
+====================================== */
+
+#formacao{
+    background:#e2e8f0;
+}
+
+#formacao h2{
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+/* ======================================
+   PORTFÓLIO
+====================================== */
+
+#portfolio{
+    background:white;
+}
+
+#portfolio h2{
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+/* ======================================
+   CONTATO
+====================================== */
+
+#contato{
+    background:#e2e8f0;
+}
+
+#contato h2{
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+/* ======================================
+   CARDS
+====================================== */
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+/* ======================================
+   FORMULÁRIO
+====================================== */
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0 20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+/* ======================================
+   BOTÕES
+====================================== */
+
+#tema{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    background:#38bdf8;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+#tema:hover{
+    background:#0ea5e9;
+}
+
+button[type="submit"]{
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button[type="submit"]:hover{
+    background:#1d4ed8;
+}
+
+/* ======================================
+   RODAPÉ
+====================================== */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ======================================
+   RESPONSIVIDADE
+====================================== */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:10px;
+    }
+
+    #sobre h1{
+        font-size:36px;
+    }
+
+}
+
+/* ======================================
+   TEMA ESCURO
+====================================== */
+
+.dark{
+    background:#121212;
+    color:#f1f1f1;
+}
+
+.dark header{
+    background:#0d1117;
+}
+
+.dark #sobre{
+    background:#1a1a1a;
+}
+
+.dark #formacao{
+    background:#222;
+}
+
+.dark #portfolio{
+    background:#1a1a1a;
+}
+
+.dark #contato{
+    background:#222;
+}
+
+.dark h1,
+.dark h2,
+.dark h3{
+    color:#38bdf8;
+}
+
+.dark .card{
+    background:#2d2d2d;
+    color:white;
+}
+
+.dark input,
+.dark textarea{
+    background:#333;
+    color:white;
+    border:1px solid #555;
+}
+
+.dark button[type="submit"]{
+    background:#2563eb;
+    color:white;
+}
+
+.dark button[type="submit"]:hover{
+    background:#1d4ed8;
+}
